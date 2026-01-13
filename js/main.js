@@ -1,14 +1,16 @@
 const cards = document.querySelectorAll('.project-card');
 const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.prev');
-const hamburger = document.getElementById("hamburger");
+
+const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
+/* NAVBAR */
 hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-
+/* SLIDER */
 let index = 0;
 
 function showCard(i) {
@@ -25,6 +27,3 @@ prevBtn.addEventListener('click', () => {
   index = (index - 1 + cards.length) % cards.length;
   showCard(index);
 });
-
-
-
