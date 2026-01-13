@@ -1,6 +1,13 @@
 const cards = document.querySelectorAll('.project-card');
 const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.prev');
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
 
 let index = 0;
 
@@ -18,4 +25,6 @@ prevBtn.addEventListener('click', () => {
   index = (index - 1 + cards.length) % cards.length;
   showCard(index);
 });
+
+
 
