@@ -86,14 +86,9 @@ body::after {
   top: 0;
   z-index: 20;
 }
-/* 🔹 FIN DEL AGREGADO */
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
+
+
 
 .logo {
   color: #fff;
@@ -147,6 +142,42 @@ body::after {
     display: flex;
   }
 }
+/* ====== MEJORAS VISUALES NAVBAR MOBILE (SOLO AGREGA) ====== */
+
+@media (max-width: 768px) {
+
+  /* Ajuste general del navbar en móvil */
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  /* Menú desplegable más limpio */
+  .nav-menu {
+    left: 0;
+    top: 100%;
+    background: rgba(15, 15, 30, 0.97);
+    
+  }
+
+  /* Links grandes y fáciles de tocar */
+  .nav-menu a {
+    padding: 1rem 0;
+    font-size: 1.05rem;
+    width: 100%;
+    display: block;
+  }
+
+  /* Separación visual entre links */
+  .nav-menu li {
+    width: 100%;
+  }
+
+  /* Efecto hover/touch */
+  .nav-menu a:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
 
 
 /* ================= HERO ================= */
