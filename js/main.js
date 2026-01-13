@@ -6,9 +6,11 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
 /* NAVBAR */
-hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-});
+if (hamburger) {
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+}
 
 /* SLIDER */
 let index = 0;
@@ -18,12 +20,12 @@ function showCard(i) {
   cards[i].classList.add('active');
 }
 
-nextBtn.addEventListener('click', () => {
+nextBtn?.addEventListener('click', () => {
   index = (index + 1) % cards.length;
   showCard(index);
 });
 
-prevBtn.addEventListener('click', () => {
+prevBtn?.addEventListener('click', () => {
   index = (index - 1 + cards.length) % cards.length;
   showCard(index);
 });
