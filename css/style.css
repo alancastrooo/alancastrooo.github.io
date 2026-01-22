@@ -911,3 +911,16 @@ html, body {
   line-height: 1.4;
   color: #ddd;
 }
+
+/* Texto */
+
+  .linkedin-link {
+    color: inherit;       
+    text-decoration: none; 
+    font-weight: bold;     
+  }
+
+  .linkedin-link:hover {
+    color: #0a66c2;       
+    text-decoration: underline; /* opcional: subrayado solo al pasar el mouse */
+  }
