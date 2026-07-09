@@ -149,6 +149,30 @@ window.addEventListener('scroll', () => {
   const progress = maxScroll > 0 ? (window.scrollY / maxScroll) * 100 : 0;
   scrollProgress.style.width = `${progress}%`;
 }, { passive: true });
+
+
+
+
+
+
+/* ================= NAVBAR ACTIVO ================= */
+
+const currentPage = window.location.pathname.split("/").pop();
+
+document.querySelectorAll(".nav-menu a").forEach(link => {
+
+    const href = link.getAttribute("href");
+
+    if (
+        href === currentPage ||
+        (currentPage === "" && href === "index.html")
+    ) {
+        link.classList.add("active");
+    }
+
+});
+
+
 </script>
 
 

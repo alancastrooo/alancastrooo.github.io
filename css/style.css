@@ -1031,3 +1031,10 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+.nav-menu a.active {
+  color: #ffffff;
+  background: rgba(96,133,255,.18);
+  box-shadow: 0 12px 28px rgba(99,102,241,.35);
+  border: 1px solid rgba(144,163,255,.35);
+}
